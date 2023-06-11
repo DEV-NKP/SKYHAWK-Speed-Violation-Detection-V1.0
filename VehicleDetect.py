@@ -26,7 +26,7 @@ class CustomFrame(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         # configure window
-        self.title("Speed Detection V1.0")
+        self.title("SKYHAWK-Speed-Violation-Detection-V1.0")
         self.captureAll=False
         self.captureExceed=True
         self.recordVideo=False
@@ -495,5 +495,5 @@ def update_text(self):
 
 if __name__ == "__main__":
     app = CustomFrame()
-    app.iconbitmap("TOSS.ico")
+    app.iconbitmap("logo.ico")
     app.mainloop()
