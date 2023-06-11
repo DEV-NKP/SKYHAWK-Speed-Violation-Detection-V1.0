@@ -1,0 +1,24 @@
+
+
+conda create --name transformer
+conda activate transformer
+
+conda clean --all
+
+conda update -n base -c defaults conda
+conda install python=3.10
+
+yolo task=detect mode=train model=yolov8n.pt data= data.yaml epochs=2 amp=False batch=8 plots=True
+
+conda clean --tarballs --packages
+conda env remove -n transformer
+pip install ultralytics
+pip install ultralytics==8.0.20
+pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+//tracking
+pip install filterpy numpy
+pip install scikit-image==0.17.2
+pip install lap==0.4.0
+
+yolo task=detect mode=train model=best.pt data= data.yaml epochs=1 batch=16 plots=True

@@ -1,0 +1,43 @@
+After install python 3.9.13(x64)
+Set environment variable.
+->Global environment path
+C:\Users\User\AppData\Local\Programs\Python\Python39\Scripts\
+C:\Users\User\AppData\Local\Programs\Python\Python39\
+
+->check version
+python --version
+
+
+->Upgrade PIP
+pip install --upgrade pip
+python.exe -m pip install --upgrade pip
+
+->Install open cv
+pip install opencv-python
+pip install opencv-contrib-python
+pip install opencv-python-headless
+pip install opencv-contrib-python-headless
+
+->Reinstall open cv (if need)
+pip uninstall opencv-python 
+pip install opencv-python
+
+->Install tkinter for GUI
+pip install tk
+pip install pillow
+pip3 install customtkinter
+
+->Install torch (YOLO dependency)
+pip3 install torch torchvision torchaudio
+
+->Install YOLO v8
+pip install ultralytics
+
+->Install onnox version 1.12.0
+pip install "onnx>=1.12.0
+
+->Install label image for lebeling to build custom dataset
+pip install labelImg
+
+->use label image
+labelImg

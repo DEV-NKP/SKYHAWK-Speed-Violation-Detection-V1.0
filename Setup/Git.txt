@@ -1,0 +1,10 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/DEV-NKP/Speed-Detection-V1.0.git
+git push -u origin master
+
+
+git lfs install
+git lfs track "*.mp4"
